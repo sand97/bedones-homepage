@@ -16,9 +16,28 @@ import {
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Network - Bedones",
+  title: "Network - Portail Captif WiFi avec Mobile Money | Bedones",
   description:
-    "Infrastructure de portails captifs WiFi avec paiement Mobile Money et cartes bancaires.",
+    "Infrastructure complète de portails captifs WiFi avec paiement Mobile Money et cartes bancaires. Monétisez votre réseau WiFi facilement. Statistiques en temps réel, promotions et auto-renouvellement. Idéal hôtels, restaurants, coworking.",
+  keywords: ['portail captif', 'WiFi', 'Mobile Money', 'hotspot', 'infrastructure réseau', 'monétisation WiFi', 'paiement Orange Money', 'MTN Money'],
+  openGraph: {
+    title: "Network - Portail Captif WiFi avec Mobile Money",
+    description:
+      "Infrastructure complète de portails captifs WiFi avec paiement Mobile Money et cartes bancaires. Monétisez votre réseau WiFi facilement avec statistiques en temps réel.",
+    url: 'https://bedones.com/network',
+    siteName: 'Bedones',
+    type: 'website',
+    locale: 'fr_FR',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Network - Portail Captif WiFi avec Mobile Money",
+    description:
+      "Infrastructure complète de portails captifs WiFi avec paiement Mobile Money. Monétisez votre réseau facilement. Idéal hôtels, restaurants, coworking.",
+  },
+  alternates: {
+    canonical: 'https://bedones.com/network',
+  },
 }
 
 export default function NetworkPage() {
@@ -32,7 +51,7 @@ export default function NetworkPage() {
         <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 pb-24 pt-40 text-center">
           <div className="mb-4 flex items-center gap-2">
             <span className="rounded-full border border-border px-3 py-1 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-              En developpement
+              En développement
             </span>
             <span className="text-xs text-muted-foreground">
               network.bedones.com
@@ -45,13 +64,13 @@ export default function NetworkPage() {
             Network
           </h1>
           <p className="mb-10 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            {"Infrastructure complete pour deployer des portails captifs WiFi. Monetisez votre reseau avec Mobile Money et cartes de paiement. Gerez vos points d'acces en toute simplicite."}
+            {"Infrastructure complète pour déployer des portails captifs WiFi. Monétisez votre réseau avec Mobile Money et cartes de paiement. Gérez vos points d'accès en toute simplicité."}
           </p>
           <a
             href="#fonctionnalites"
             className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
           >
-            Decouvrir les fonctionnalites
+            Découvrir les fonctionnalités
           </a>
         </div>
       </section>
@@ -61,10 +80,10 @@ export default function NetworkPage() {
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-16 flex flex-col items-center text-center">
             <span className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              Fonctionnalites
+              Fonctionnalités
             </span>
             <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              {"Une infrastructure WiFi complete"}
+              {"Une infrastructure WiFi complète"}
             </h2>
           </div>
 
@@ -74,37 +93,37 @@ export default function NetworkPage() {
                 icon: <Globe className="h-5 w-5" />,
                 title: "Portails captifs",
                 description:
-                  "Deploiement de portails captifs personnalises pour controler l'acces a votre reseau WiFi.",
+                  "Déploiement de portails captifs personnalisés pour contrôler l'accès à votre réseau WiFi.",
               },
               {
                 icon: <CreditCard className="h-5 w-5" />,
-                title: "Paiement integre",
+                title: "Paiement intégré",
                 description:
-                  "Acceptez Mobile Money et cartes de paiement pour monetiser l'acces a votre WiFi.",
+                  "Acceptez Mobile Money et cartes de paiement pour monétiser l'accès à votre WiFi.",
               },
               {
                 icon: <RefreshCw className="h-5 w-5" />,
                 title: "Renouvellement auto",
                 description:
-                  "Les utilisateurs peuvent renouveler eux-memes leurs abonnements sans intervention.",
+                  "Les utilisateurs peuvent renouveler eux-mêmes leurs abonnements sans intervention.",
               },
               {
                 icon: <Megaphone className="h-5 w-5" />,
                 title: "Promotions",
                 description:
-                  "Creez des promotions attractives pour attirer de nouveaux utilisateurs sur vos points d'acces.",
+                  "Créez des promotions attractives pour attirer de nouveaux utilisateurs sur vos points d'accès.",
               },
               {
                 icon: <BarChart3 className="h-5 w-5" />,
-                title: "Statistiques detaillees",
+                title: "Statistiques détaillées",
                 description:
-                  "Visualisez en temps reel les statistiques d'utilisation de chacun de vos points d'acces.",
+                  "Visualisez en temps réel les statistiques d'utilisation de chacun de vos points d'accès.",
               },
               {
                 icon: <Server className="h-5 w-5" />,
-                title: "Resources materielles",
+                title: "Ressources matérielles",
                 description:
-                  "Acquisition des equipements materiels et logiciels necessaires pour votre infrastructure.",
+                  "Acquisition des équipements matériels et logiciels nécessaires pour votre infrastructure.",
               },
             ].map((feature) => (
               <div
@@ -140,10 +159,10 @@ export default function NetworkPage() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
-              { title: "Hotels & Resorts", description: "Offrez un WiFi premium a vos clients avec facturation integree." },
-              { title: "Restaurants & Cafes", description: "Monetisez votre WiFi ou offrez-le en echange d'interactions." },
-              { title: "Espaces de coworking", description: "Gerez differents forfaits d'acces pour vos membres." },
-              { title: "Espaces publics", description: "Deploiez des points d'acces WiFi dans les espaces communautaires." },
+              { title: "Hôtels & Resorts", description: "Offrez un WiFi premium à vos clients avec facturation intégrée." },
+              { title: "Restaurants & Cafés", description: "Monétisez votre WiFi ou offrez-le en échange d'interactions." },
+              { title: "Espaces de coworking", description: "Gérez différents forfaits d'accès pour vos membres." },
+              { title: "Espaces publics", description: "Déployez des points d'accès WiFi dans les espaces communautaires." },
             ].map((useCase) => (
               <div
                 key={useCase.title}
@@ -170,20 +189,20 @@ export default function NetworkPage() {
                 Inclus
               </span>
               <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                {"Tout pour demarrer"}
+                {"Tout pour démarrer"}
               </h2>
               <p className="text-base leading-relaxed text-muted-foreground">
-                {"Network fournit l'ensemble des ressources materielles et logicielles necessaires au deploiement de votre infrastructure WiFi."}
+                {"Network fournit l'ensemble des ressources matérielles et logicielles nécessaires au déploiement de votre infrastructure WiFi."}
               </p>
             </div>
             <div className="flex flex-col gap-3">
               {[
-                "Equipements reseau (routeurs, points d'acces)",
+                "Équipements réseau (routeurs, points d'accès)",
                 "Logiciel de gestion de portail captif",
-                "Integration Mobile Money (Orange, MTN, etc.)",
-                "Integration cartes bancaires",
-                "Tableau de bord de suivi en temps reel",
-                "Systeme de promotions et coupons",
+                "Intégration Mobile Money (Orange, MTN, etc.)",
+                "Intégration cartes bancaires",
+                "Tableau de bord de suivi en temps réel",
+                "Système de promotions et coupons",
                 "Auto-renouvellement des abonnements",
                 "Support technique & maintenance",
               ].map((item) => (
@@ -202,10 +221,10 @@ export default function NetworkPage() {
         <GridPattern />
         <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 py-24 text-center">
           <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground">
-            {"Interesse par Network ?"}
+            {"Intéressé par Network ?"}
           </h2>
           <p className="mb-8 max-w-xl text-base text-muted-foreground">
-            {"Le produit est en cours de developpement. Contactez-nous pour discuter de votre projet d'infrastructure WiFi."}
+            {"Le produit est en cours de développement. Contactez-nous pour discuter de votre projet d'infrastructure WiFi."}
           </p>
           <a
             href="mailto:contact@bedones.com"

@@ -14,7 +14,7 @@ export function Footer() {
               <span className="text-lg font-semibold text-foreground">Bedones</span>
             </div>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Solutions IA & services numeriques pour transformer vos processus metier.
+              Solutions IA & services numériques pour transformer vos processus métier.
             </p>
           </div>
 
@@ -94,7 +94,7 @@ export function Footer() {
 
         <div className="border-t border-border pt-6">
           <p className="text-center text-xs text-muted-foreground">
-            {new Date().getFullYear()} Bedones. Tous droits reserves.
+            {new Date().getFullYear()} Bedones. Tous droits réservés.
           </p>
         </div>
       </div>

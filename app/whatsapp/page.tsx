@@ -16,9 +16,28 @@ import {
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "WhatsApp Business IA - Bedones",
+  title: "WhatsApp Business IA - Gestion Intelligente de Conversations | Bedones",
   description:
-    "Gerez vos conversations WhatsApp Business avec l'IA sans perdre l'acces sur votre telephone.",
+    "Gérez vos conversations WhatsApp Business avec l'intelligence artificielle sans perdre l'accès sur votre téléphone. L'IA apprend de vous, gère les labels, transcrit les audios et transmet les leads automatiquement.",
+  keywords: ['WhatsApp Business', 'IA conversationnelle', 'chatbot intelligent', 'automation WhatsApp', 'gestion leads', 'transcription audio'],
+  openGraph: {
+    title: "WhatsApp Business IA - Gestion Intelligente de Conversations",
+    description:
+      "Gérez vos conversations WhatsApp Business avec l'intelligence artificielle sans perdre l'accès sur votre téléphone. L'IA apprend de vous, gère les labels et transmet les leads automatiquement.",
+    url: 'https://bedones.com/whatsapp',
+    siteName: 'Bedones',
+    type: 'website',
+    locale: 'fr_FR',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "WhatsApp Business IA - Gestion Intelligente de Conversations",
+    description:
+      "Gérez vos conversations WhatsApp Business avec l'IA sans perdre l'accès sur votre téléphone. L'IA apprend et répond intelligemment.",
+  },
+  alternates: {
+    canonical: 'https://bedones.com/whatsapp',
+  },
 }
 
 export default function WhatsAppPage() {
@@ -32,7 +51,7 @@ export default function WhatsAppPage() {
         <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 pb-24 pt-40 text-center">
           <div className="mb-4 flex items-center gap-2">
             <span className="rounded-full border border-border px-3 py-1 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-              En developpement
+              En développement
             </span>
             <span className="text-xs text-muted-foreground">
               whatsapp.bedones.com
@@ -45,13 +64,13 @@ export default function WhatsAppPage() {
             WhatsApp Business IA
           </h1>
           <p className="mb-10 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            {"Gerez vos conversations WhatsApp Business avec l'intelligence artificielle sans perdre l'acces a WhatsApp sur votre telephone. L'IA apprend de vous et repond intelligemment."}
+            {"Gérez vos conversations WhatsApp Business avec l'intelligence artificielle sans perdre l'accès à WhatsApp sur votre téléphone. L'IA apprend de vous et répond intelligemment."}
           </p>
           <a
             href="#fonctionnalites"
             className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
           >
-            Decouvrir les fonctionnalites
+            Découvrir les fonctionnalités
           </a>
         </div>
       </section>
@@ -61,7 +80,7 @@ export default function WhatsAppPage() {
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-16 flex flex-col items-center text-center">
             <span className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              Fonctionnalites
+              Fonctionnalités
             </span>
             <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
               {"Une IA qui apprend et s'adapte"}
@@ -74,7 +93,7 @@ export default function WhatsAppPage() {
                 icon: <Brain className="h-5 w-5" />,
                 title: "Apprentissage continu",
                 description:
-                  "L'IA apprend de vos reponses et de votre style pour repondre de maniere coherente.",
+                  "L'IA apprend de vos réponses et de votre style pour répondre de manière cohérente.",
               },
               {
                 icon: <Tag className="h-5 w-5" />,
@@ -86,19 +105,19 @@ export default function WhatsAppPage() {
                 icon: <StickyNote className="h-5 w-5" />,
                 title: "Notes intelligentes",
                 description:
-                  "L'IA genere et gere les notes de chaque conversation pour un suivi precis.",
+                  "L'IA génère et gère les notes de chaque conversation pour un suivi précis.",
               },
               {
                 icon: <Headphones className="h-5 w-5" />,
-                title: "Ecoute audio",
+                title: "Écoute audio",
                 description:
-                  "Capacite d'ecouter et de transcrire les messages vocaux pour comprendre le contexte complet.",
+                  "Capacité d'écouter et de transcrire les messages vocaux pour comprendre le contexte complet.",
               },
               {
                 icon: <Users className="h-5 w-5" />,
                 title: "Transmission de leads",
                 description:
-                  "Transmission automatique des leads qualifies dans vos groupes d'equipe WhatsApp.",
+                  "Transmission automatique des leads qualifiés dans vos groupes d'équipe WhatsApp.",
               },
               {
                 icon: <ShoppingBag className="h-5 w-5" />,
@@ -138,7 +157,7 @@ export default function WhatsAppPage() {
                 {"Bien plus qu'un simple chatbot"}
               </h2>
               <p className="text-base leading-relaxed text-muted-foreground">
-                {"L'IA Bedones WhatsApp comprend le contexte, sait quand ne pas repondre, fait des comptes rendus et transmet les informations critiques a votre equipe."}
+                {"L'IA Bedones WhatsApp comprend le contexte, sait quand ne pas répondre, fait des comptes rendus et transmet les informations critiques à votre équipe."}
               </p>
             </div>
             <div className="flex flex-col gap-3">
@@ -146,10 +165,10 @@ export default function WhatsAppPage() {
                 "Apprentissage du style de communication de l'utilisateur",
                 "Gestion intelligente des labels de conversation",
                 "Notes automatiques par conversation",
-                "Transcription et comprehension des messages audio",
-                "Detection du moment opportun pour ne pas repondre",
+                "Transcription et compréhension des messages audio",
+                "Détection du moment opportun pour ne pas répondre",
                 "Comptes rendus automatiques",
-                "Transmission des leads dans les groupes d'equipe",
+                "Transmission des leads dans les groupes d'équipe",
                 "Envoi d'articles du catalogue selon le contexte",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3 rounded-lg border border-border bg-background px-4 py-3">
@@ -167,10 +186,10 @@ export default function WhatsAppPage() {
         <GridPattern />
         <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 py-24 text-center">
           <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground">
-            {"Interesse par WhatsApp Business IA ?"}
+            {"Intéressé par WhatsApp Business IA ?"}
           </h2>
           <p className="mb-8 max-w-xl text-base text-muted-foreground">
-            {"Le produit est en cours de developpement. Contactez-nous pour etre parmi les premiers a l'utiliser."}
+            {"Le produit est en cours de développement. Contactez-nous pour être parmi les premiers à l'utiliser."}
           </p>
           <a
             href="mailto:contact@bedones.com"

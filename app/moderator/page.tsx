@@ -16,9 +16,28 @@ import {
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Moderator - Bedones",
+  title: "Moderator - Modération IA Facebook & Instagram | Bedones",
   description:
-    "Plateforme de monitoring de commentaires sur Facebook et Instagram via l'IA.",
+    "Plateforme de monitoring et modération automatique de commentaires sur Facebook et Instagram via l'IA. Détection de spam, réponses automatiques, suppression intelligente. Protégez votre image de marque 24/7.",
+  keywords: ['modération IA', 'Facebook', 'Instagram', 'commentaires', 'IA', 'spam', 'réseaux sociaux', 'automation'],
+  openGraph: {
+    title: "Moderator - Modération IA Facebook & Instagram",
+    description:
+      "Plateforme de monitoring et modération automatique de commentaires sur Facebook et Instagram via l'IA. Détection de spam, réponses automatiques, suppression intelligente.",
+    url: 'https://bedones.com/moderator',
+    siteName: 'Bedones',
+    type: 'website',
+    locale: 'fr_FR',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Moderator - Modération IA Facebook & Instagram",
+    description:
+      "Plateforme de monitoring et modération automatique de commentaires sur Facebook et Instagram via l'IA. Protégez votre image de marque 24/7.",
+  },
+  alternates: {
+    canonical: 'https://bedones.com/moderator',
+  },
 }
 
 export default function ModeratorPage() {
@@ -45,7 +64,7 @@ export default function ModeratorPage() {
             Moderator
           </h1>
           <p className="mb-10 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            {"Monitoring intelligent de vos commentaires Facebook et Instagram. L'IA analyse, repond et modere automatiquement pour proteger votre image de marque."}
+            {"Monitoring intelligent de vos commentaires Facebook et Instagram. L'IA analyse, répond et modère automatiquement pour protéger votre image de marque."}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
@@ -54,14 +73,14 @@ export default function ModeratorPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-80"
             >
-              Acceder a la plateforme
+              Accéder à la plateforme
               <ArrowUpRight className="h-4 w-4" />
             </a>
             <a
               href="#fonctionnalites"
               className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
-              Voir les fonctionnalites
+              Voir les fonctionnalités
             </a>
           </div>
         </div>
@@ -72,10 +91,10 @@ export default function ModeratorPage() {
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-16 flex flex-col items-center text-center">
             <span className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              Fonctionnalites
+              Fonctionnalités
             </span>
             <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              {"Tout ce qu'il faut pour moderer vos reseaux"}
+              {"Tout ce qu'il faut pour modérer vos réseaux"}
             </h2>
           </div>
 
@@ -83,39 +102,39 @@ export default function ModeratorPage() {
             {[
               {
                 icon: <Shield className="h-5 w-5" />,
-                title: "Moderation IA",
+                title: "Modération IA",
                 description:
-                  "L'IA detecte et classe automatiquement les commentaires negatifs, spam et contenus inappropries.",
+                  "L'IA détecte et classe automatiquement les commentaires négatifs, spam et contenus inappropriés.",
               },
               {
                 icon: <Zap className="h-5 w-5" />,
-                title: "Reponses automatiques",
+                title: "Réponses automatiques",
                 description:
-                  "Definissez une liste de questions-reponses frequentes et laissez l'IA repondre a votre place.",
+                  "Définissez une liste de questions-réponses fréquentes et laissez l'IA répondre à votre place.",
               },
               {
                 icon: <Trash2 className="h-5 w-5" />,
                 title: "Suppression & masquage",
                 description:
-                  "Activez la suppression ou le masquage automatique des commentaires nefastes detectes par l'IA.",
+                  "Activez la suppression ou le masquage automatique des commentaires néfastes détectés par l'IA.",
               },
               {
                 icon: <Eye className="h-5 w-5" />,
-                title: "Monitoring en temps reel",
+                title: "Monitoring en temps réel",
                 description:
-                  "Suivez en temps reel tous les commentaires sur vos publications Facebook et Instagram.",
+                  "Suivez en temps réel tous les commentaires sur vos publications Facebook et Instagram.",
               },
               {
                 icon: <Settings className="h-5 w-5" />,
                 title: "Configuration flexible",
                 description:
-                  "Personnalisez les regles de moderation, les seuils de sensibilite et les actions automatiques.",
+                  "Personnalisez les règles de modération, les seuils de sensibilité et les actions automatiques.",
               },
               {
                 icon: <BarChart3 className="h-5 w-5" />,
                 title: "Tableau de bord",
                 description:
-                  "Visualisez les statistiques de moderation, les tendances et les performances de votre communaute.",
+                  "Visualisez les statistiques de modération, les tendances et les performances de votre communauté.",
               },
             ].map((feature) => (
               <div
@@ -142,10 +161,10 @@ export default function ModeratorPage() {
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="mb-16 flex flex-col items-center text-center">
             <span className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              Comment ca marche
+              Comment ça marche
             </span>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              3 etapes simples
+              3 étapes simples
             </h2>
           </div>
 
@@ -159,15 +178,15 @@ export default function ModeratorPage() {
               },
               {
                 step: "02",
-                title: "Configurez vos regles",
+                title: "Configurez vos règles",
                 description:
-                  "Definissez vos questions-reponses, mots-cles a surveiller et actions automatiques.",
+                  "Définissez vos questions-réponses, mots-clés à surveiller et actions automatiques.",
               },
               {
                 step: "03",
                 title: "Laissez l'IA travailler",
                 description:
-                  "L'IA modere automatiquement 24/7. Consultez le tableau de bord pour suivre les resultats.",
+                  "L'IA modère automatiquement 24/7. Consultez le tableau de bord pour suivre les résultats.",
               },
             ].map((item) => (
               <div
@@ -194,10 +213,10 @@ export default function ModeratorPage() {
         <GridPattern />
         <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 py-24 text-center">
           <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground">
-            {"Pret a proteger votre communaute ?"}
+            {"Prêt à protéger votre communauté ?"}
           </h2>
           <p className="mb-8 max-w-xl text-base text-muted-foreground">
-            {"Commencez a moderer vos reseaux sociaux avec l'intelligence artificielle des aujourd'hui."}
+            {"Commencez à modérer vos réseaux sociaux avec l'intelligence artificielle dès aujourd'hui."}
           </p>
           <a
             href="https://moderator.bedones.com"

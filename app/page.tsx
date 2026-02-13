@@ -19,7 +19,7 @@ export default function Home() {
             {"Construire le futur avec l'intelligence artificielle"}
           </h1>
           <p className="mb-10 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            {"Bedones conçoit des solutions logicielles alimentees par l'IA pour automatiser, optimiser et transformer vos processus metier. Du monitoring des reseaux sociaux a la gestion intelligente de vos conversations."}
+            {"Bedones conçoit des solutions logicielles alimentées par l'IA pour automatiser, optimiser et transformer vos processus métier. Du monitoring des réseaux sociaux à la gestion intelligente de vos conversations."}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
@@ -72,27 +72,27 @@ export default function Home() {
               Une suite de solutions pour chaque besoin
             </h2>
             <p className="max-w-xl text-base text-muted-foreground">
-              {"Chaque produit est conçu pour resoudre un probleme precis avec la puissance de l'intelligence artificielle."}
+              {"Chaque produit est conçu pour résoudre un problème précis avec la puissance de l'intelligence artificielle."}
             </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
             <ProductCard
               title="Moderator"
-              description="Plateforme de monitoring de commentaires sur Facebook et Instagram via l'IA. Gerez vos reponses et filtrez le contenu automatiquement."
+              description="Plateforme de monitoring de commentaires sur Facebook et Instagram via l'IA. Gérez vos réponses et filtrez le contenu automatiquement."
               href="/moderator"
               status="live"
               domain="moderator.bedones.com"
               icon={<MessageSquare className="h-6 w-6" />}
               features={[
-                "Moderation automatique par IA",
-                "Questions-reponses frequentes",
+                "Modération automatique par IA",
+                "Questions-réponses fréquentes",
                 "Suppression/masquage automatique",
               ]}
             />
             <ProductCard
               title="WhatsApp"
-              description="Gerez vos conversations WhatsApp Business avec l'IA sans perdre l'acces sur votre telephone. L'IA apprend et repond intelligemment."
+              description="Gérez vos conversations WhatsApp Business avec l'IA sans perdre l'accès sur votre téléphone. L'IA apprend et répond intelligemment."
               href="/whatsapp"
               status="development"
               domain="whatsapp.bedones.com"
@@ -105,15 +105,15 @@ export default function Home() {
             />
             <ProductCard
               title="Network"
-              description="Infrastructure de portails captifs WiFi avec paiement Mobile Money et cartes. Monetisez votre reseau facilement."
+              description="Infrastructure de portails captifs WiFi avec paiement Mobile Money et cartes. Monétisez votre réseau facilement."
               href="/network"
               status="development"
               domain="network.bedones.com"
               icon={<Wifi className="h-6 w-6" />}
               features={[
-                "Portails captifs personnalises",
+                "Portails captifs personnalisés",
                 "Paiement Mobile Money & CB",
-                "Statistiques en temps reel",
+                "Statistiques en temps réel",
               ]}
             />
           </div>
@@ -129,10 +129,10 @@ export default function Home() {
                 Sur mesure
               </span>
               <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                {"Vous avez une idee de logiciel ?"}
+                {"Vous avez une idée de logiciel ?"}
               </h2>
               <p className="text-base leading-relaxed text-muted-foreground">
-                {"Au-dela de nos produits, Bedones accompagne les entreprises et les entrepreneurs dans la conception et le developpement de solutions logicielles sur mesure. De l'idee au deploiement, nous transformons votre vision en realite."}
+                {"Au-delà de nos produits, Bedones accompagne les entreprises et les entrepreneurs dans la conception et le développement de solutions logicielles sur mesure. De l'idée au déploiement, nous transformons votre vision en réalité."}
               </p>
               <a
                 href="#contact"
@@ -145,8 +145,8 @@ export default function Home() {
               {[
                 { num: "01", label: "Analyse des besoins" },
                 { num: "02", label: "Conception & Design" },
-                { num: "03", label: "Developpement" },
-                { num: "04", label: "Deploiement & Suivi" },
+                { num: "03", label: "Développement" },
+                { num: "04", label: "Déploiement & Suivi" },
               ].map((step) => (
                 <div
                   key={step.num}
@@ -171,7 +171,7 @@ export default function Home() {
             Parlons de votre projet
           </h2>
           <p className="mb-8 max-w-xl text-base text-muted-foreground">
-            {"Que vous souhaitiez utiliser l'un de nos produits ou creer une solution sur mesure, notre equipe est a votre ecoute."}
+            {"Que vous souhaitiez utiliser l'un de nos produits ou créer une solution sur mesure, notre équipe est à votre écoute."}
           </p>
           <a
             href="mailto:contact@bedones.com"

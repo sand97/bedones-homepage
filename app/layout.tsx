@@ -3,9 +3,29 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Bedones - Solutions IA & Services Numeriques",
+  metadataBase: new URL('https://bedones.com'),
+  title: "Bedones - Solutions IA & Services Numériques",
   description:
-    "Bedones conçoit des solutions logicielles alimentees par l'intelligence artificielle. Moderation de commentaires, gestion WhatsApp Business, infrastructure reseau WiFi.",
+    "Bedones conçoit des solutions logicielles alimentées par l'intelligence artificielle. Modération de commentaires Facebook/Instagram, gestion WhatsApp Business IA, infrastructure réseau WiFi avec Mobile Money.",
+  keywords: ['IA', 'intelligence artificielle', 'modération IA', 'WhatsApp Business', 'portail captif WiFi', 'Mobile Money', 'SaaS', 'Afrique'],
+  authors: [{ name: 'Bedones' }],
+  creator: 'Bedones',
+  publisher: 'Bedones',
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    url: 'https://bedones.com',
+    title: "Bedones - Solutions IA & Services Numériques",
+    description:
+      "Bedones conçoit des solutions logicielles alimentées par l'intelligence artificielle. Modération de commentaires Facebook/Instagram, gestion WhatsApp Business IA, infrastructure réseau WiFi avec Mobile Money.",
+    siteName: 'Bedones',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Bedones - Solutions IA & Services Numériques",
+    description:
+      "Bedones conçoit des solutions logicielles alimentées par l'intelligence artificielle. Modération de commentaires Facebook/Instagram, gestion WhatsApp Business IA, infrastructure réseau WiFi.",
+  },
 }
 
 export const viewport: Viewport = {
